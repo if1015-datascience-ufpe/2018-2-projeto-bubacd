@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Análise de tweets relacionados à intenção de voto nas eleições presidenciáveis de 2018}
+
+\author{
+  Renan Freitas\\
+  \texttt{rfl3@cin.ufpe.br}
+  \and
+  Victor Miranda\\
+  \texttt{vmm@cin.ufpe.br}
+}
+
+\begin{document}
+
+\maketitle
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{2.0}
+
+\section{Introdução}
+\text{
+Nosso grupo tem a intenção de analisar tweets que expressam apoio ou crítica a candidatos presidenciáveis das eleições brasileiras de 2018.
+}
+
+\section{Coleta dos dados}
+
+ \text{
+ Os dados vão ser coletados da api do twitter, utilizando o Twitter Advanced Search. A princípio procuraremos por citações diretas dos candidatos, incluindo seu nome ou nome do partido. Neste último caso, tentaremos criar alguma conexão com o candidato presidenciável do partido para evitar depoimentos muito genéricos.
+ }
+
+\section{Processamento dos dados}
+\text{
+Dividiremos os tweets por usuário e faremos um filtro com pessoas que se expressaram mais de uma vez sobre certo candidato. Depois usaremos o Watson Tone Analyser para identificar o “sentimento” por trás do tweet (negativo ou positivo) e atribuir ao mesmo.
+}
+
+\section{Análise exploratória}
+\text{
+Nós iremos explorar os dados obtidos para analisar as seguintes ideias:
+\begin{itemize}
+    \item Criaremos uma linha do tempo para observar se houve uma mudança na opinião sobre certo candidato
+    \item Observar o número de intenção de voto para cada candidato presidenciável e como este número reflete o resultado real das eleições 
+    \item Entender como a utilização de bot pode ter influência nas intenções de voto
+\end{itemize}
+}
+
+\section{Visualização dos dados}
+\text{
+Para auxiliar no processo de análise, criaremos algumas visualizações comparativas para atingirmos os objetivos do estudo. As visualizações em si ainda não estão claras, ficarão quando tivermos posse dos dados. Mas a princípio, temos a ideia de fazer uma linha do tempo com tweets negativos e positivos dos usuários.
+}
+\end{document}
