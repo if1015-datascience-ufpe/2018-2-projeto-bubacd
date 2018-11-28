@@ -35,3 +35,4 @@ class TweetCriteria:
 	def setWithin(self, within):
 		self.within = within
 		return self
+

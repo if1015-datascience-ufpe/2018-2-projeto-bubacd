@@ -51,6 +51,7 @@ class TweetManager:
 				if len(geoSpan) > 0:
 					geo = geoSpan.attr('title')
 				
+				tweet.language = tweetPQ("p.js-tweet-text").attr("lang")
 				tweet.id = id
 				tweet.permalink = 'https://twitter.com' + permalink
 				tweet.username = usernameTweet
